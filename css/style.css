@@ -2,29 +2,41 @@
 /* bg color "add task" button and div.editorial #14AAF5 */
 /* bg color div.q1-goals #AB5DE6 */
 /* bg color div.recruiting #2CC6AB */
-/* bg color div.recruiting #FF9B00 */
+/* bg color div.mobile #FF9B00 */
 /* bg color div.website #EC4A9D */
 /* bg color div.sales #A3D116 */
 
 /* common */
 
 :root{
+    --color-checked: rgb(57, 233, 57);
+    --color-unchecked:red;
     --bgcolor-body: #F6F8F9;
     --bgcolor-site-header: white;
     --fontfamily: tahoma;
     --bgcolor-button-addtask: #14AAF5;
     --color-button-addcategory: #C4CBD0;
+    --bgcolor-q1goals: #AB5DE6;
+    --bgcolor-recruiting: #2CC6AB;
+    --bgcolor-mobile: #FF9B00;
+    --bgcolor-website: #EC4A9D;
+    --bgcolor-sales: #A3D116;
 }
 
 body{
     background-color: var(--bgcolor-body);
+    font-family: var(--fontfamily);
 }
 
 h1{
     display: inline-block;
     font-size: 3rem;
     vertical-align: top;
-    font-family: var(--fontfamily);
+}
+
+section{
+    margin-bottom: 20px;
+    padding-left: 50px;
 }
 
 
@@ -72,13 +84,62 @@ img.logo{
     width: 100px;    
 }
 
-.category.editorial{
+.checked, .unchecked{
     display: inline-block;
-    background-color: var(--bgcolor-button-addtask);
-    padding: 0.5rem;
-    font-size: 0.5rem;
-    color: var(--bgcolor-site-header);
-    border-radius: 10px;
-    width: 35px;
-    text-align: center;
+    border-radius: 50%;
+    border: 1px solid;
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+    line-height: 1rem;
+    text-align: center;  
 }
+
+.checked{
+    color: var(--color-checked);
+}
+
+.unchecked{
+    color: var(--color-unchecked);
+}
+
+.downharrowhead {
+    font-size: 1rem;
+}
+
+.task{
+    margin-bottom: 10px;
+}
+
+.category{
+        display: inline-block;
+        padding: 0.5rem;
+        font-size: 0.5rem;
+        color: var(--bgcolor-site-header);
+        border-radius: 10px;
+        width: 35px;
+        text-align: center;    
+}
+
+.category.editorial{
+    background-color: var(--bgcolor-button-addtask);
+}
+
+.category.q1goals{
+    background-color: var(--bgcolor-q1goals);
+}
+
+.category.recruiting{
+    background-color: var(--bgcolor-recruiting);
+}
+
+.category.mobile{
+    background-color: var(--bgcolor-mobile);
+}
+
+.category.website{
+    background-color: var(--bgcolor-website);
+}
+ .category.sales{
+     background-color: var(--bgcolor-sales);
+ }
