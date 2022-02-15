@@ -13,7 +13,7 @@
     --bgcolor-site-header: white;
     --fontfamily: tahoma;
     --bgcolor-button-addtask: #14AAF5;
-    --color-button-addsection: #C4CBD0;
+    --color-button-addcategory: #C4CBD0;
 }
 
 body{
@@ -48,8 +48,8 @@ img.logo{
     margin: auto;
 }
 
-#main_header{
-    margin-bottom: 5px;
+#main-header{
+    border-bottom: 2px solid var(--bgcolor-body);
 }
 
 .addtask{
@@ -60,14 +60,25 @@ img.logo{
     background-color: var(--bgcolor-button-addtask);
 }
 
-.addsection{
-    color: var(--color-button-addsection);
+.addcategory{
+    color: var(--color-button-addcategory);
     background-color: var(--bgcolor-site-header);
 }
 
-.addtask, .addsection{
+.addtask, .addcategory{
     padding: 0.5rem;
-    border: 1px solid var(--color-button-addsection);
+    border: 1px solid var(--color-button-addcategory);
     border-radius: 7px;
     width: 100px;    
+}
+
+.category.editorial{
+    display: inline-block;
+    background-color: var(--bgcolor-button-addtask);
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    color: var(--bgcolor-site-header);
+    border-radius: 10px;
+    width: 35px;
+    text-align: center;
 }
