@@ -9,7 +9,7 @@
 /* common */
 
 :root{
-    --bgimage: url(../img/logo.jpg);
+    --color-text: black;
     --color-checked: rgb(57, 233, 57);
     --color-unchecked:red;
     --bgcolor-body: #F6F8F9;
@@ -25,9 +25,9 @@
 }
 
 body{
-    margin: 0;
     background-color: var(--bgcolor-body);
     font-family: var(--fontfamily);
+    color: var(--color-text);
 }
 
 h1{
@@ -49,10 +49,7 @@ section{
     margin-bottom: 50px;
 }
 
-.imglogo{
-    display: inline-block;
-    background-image: var(--bgimage);
-    background-size: cover;
+img.logo{
     width: 150px;
     height: 150px;
 }
@@ -63,8 +60,6 @@ section{
     background-color: var(--bgcolor-site-header);
     width: 1200px;
     margin: auto;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
 }
 
 #main-header{
