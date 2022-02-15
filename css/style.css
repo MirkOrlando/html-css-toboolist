@@ -8,6 +8,34 @@
 
 /* common */
 
+:root{
+    --bgcolor-body: #F6F8F9;
+    --bgcolor-site-header: white;
+    --fontfamily: tahoma;
+}
+
+body{
+    background-color: var(--bgcolor-body);
+}
+
+h1{
+    display: inline-block;
+    font-size: 7rem;
+    vertical-align: top;
+    font-family: var(--fontfamily);
+}
+
+
 /* #site-header */
+
+#site-header{
+    background-color: var(--bgcolor-site-header);
+}
+
+img.logo{
+    width: 300px;
+    height: 300px;
+}
+
 
 /* #site-main */
