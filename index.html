@@ -13,7 +13,10 @@
     <header id="site-header">
         <div class="container logo">
             <div class="imglogo"></div>
-            <h1>Toboolist</h1>
+            <!-- nella correzione si utilizza il tag strong 
+                in quanto fa parte del logo e non si può considerare 
+                come un titolo (h1 rappresenta il titolo) -->
+            <h1>Toboolist</h1> 
         </div>
     </header>
     <!-- /#site-header -->
@@ -30,12 +33,15 @@
 
         <section class="newtask">
             <h2> <span class="downharrowhead">&#x25BC;</span> New Task</h2>
+            <!-- invece dei dive avrei potuto/dovuto utilizzare ul assegnando a ul 
+            l'attributo list-style con valore none -->
             <div class="task"><span class="checked">&#10003;</span> Lorem, ipsum. <span class="category editorial">Editorial</span></div>
         </section>
         <section class="today">
             <h2> <span class="downharrowhead">&#x25BC;</span> Today</h2>
             <div class="task"><span class="checked">&#10003;</span> Lorem, ipsum dolor. <span class="category editorial">Editorial</span></div>
             <div class="task"><span class="checked">&#10003;</span> Lorem, ipsum dolor. <span class="category q1goals">Q1 Goals</span></div>
+            <!-- invece di uncheck potevo chiamarlo cross -->
             <div class="task"><span class="unchecked">&#10005;</span> Lorem, ipsum dolor.<span class="category recruiting">recruiting</span></div>
             <div class="task"><span class="checked">&#10003;</span> Lorem ipsum dolor sit amet. <span class="category mobile">mobile</span></div>
         </section>

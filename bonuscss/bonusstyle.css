@@ -156,6 +156,7 @@ section{
 .category.website{
     background-color: var(--bgcolor-website);
 }
+
  .category.sales{
      background-color: var(--bgcolor-sales);
  }
