@@ -5,17 +5,21 @@
 /* bg color div.mobile #FF9B00 */
 /* bg color div.website #EC4A9D */
 /* bg color div.sales #A3D116 */
+/* color logo #001533  */
+/* bg color button.addtask #bbcbd3  */
 
 /* common */
 
 :root{
-    --color-text: black;
-    --color-checked: rgb(57, 233, 57);
-    --color-unchecked:red;
-    --bgcolor-body: #F6F8F9;
-    --bgcolor-site-header: white;
+    --bgimage: url(../bonusimg/bonuslogo.png);
+    --color-text: white;
+    --color-checked: #adffad;
+    --color-unchecked:#ff7c7c;
+    --bgcolor-body: #313c4a;
+    --bgcolor-site-header: #001533;
     --fontfamily: tahoma;
-    --bgcolor-button-addtask: #14AAF5;
+    --bgcolor-button-addtask: #bbcbd3;
+    --bgcolor-editorial: #14AAF5;
     --color-button-addcategory: #C4CBD0;
     --bgcolor-q1goals: #AB5DE6;
     --bgcolor-recruiting: #2CC6AB;
@@ -25,6 +29,7 @@
 }
 
 body{
+    margin: 0;
     background-color: var(--bgcolor-body);
     font-family: var(--fontfamily);
     color: var(--color-text);
@@ -49,7 +54,10 @@ section{
     margin-bottom: 50px;
 }
 
-img.logo{
+.imglogo{
+    display: inline-block;
+    background-image: var(--bgimage);
+    background-size: cover;
     width: 150px;
     height: 150px;
 }
@@ -60,6 +68,8 @@ img.logo{
     background-color: var(--bgcolor-site-header);
     width: 1200px;
     margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #main-header{
@@ -124,7 +134,7 @@ img.logo{
 }
 
 .category.editorial{
-    background-color: var(--bgcolor-button-addtask);
+    background-color: var(--bgcolor-editorial);
 }
 
 .category.q1goals{
